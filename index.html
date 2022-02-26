@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Margin calculator</title>
+  </head>
+  <body>
+    <h3>Margin calculator</h3>
+    <div class="wrapper window">
+        <div class="stock-wrapper">
+            <div class="input-field">
+                <input class="input_text" type="number" data-length="10">
+                <label class="percent_text_price" for="input_text">Stock price margin</label>
+            </div>
+
+            <div class="container">
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+5%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+10%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+15%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+20%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+25%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+30%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+35%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+40%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+45%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+50%</label>
+                    </div>
+                </div>
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+55%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+60%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+65%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+70%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+75%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+80%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+85%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+90%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+95%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus"></span>
+                        <label class="percent_text_plus" >+100%</label>
+                    </div>
+                </div>
+
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-5%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-10%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-15%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-20%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-25%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-30%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-35%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-40%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-45%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-50%</label>
+                    </div>
+                </div>
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-55%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-60%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-65%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-70%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-75%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-80%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-85%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-90%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-95%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus"></span>
+                        <label class="percent_text_minus" >-100%</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ammount-wrapper">
+            <div class="input-field_am">
+                <input class="input_text_am" type="number" data-length="10">
+                <label class="percent_text_price_am" for="input_text_am">Ammount margin</label>
+            </div>
+
+            <div class="container">
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+5%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+10%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+15%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+20%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+25%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+30%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+35%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+40%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+45%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+50%</label>
+                    </div>
+                </div>
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+55%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+60%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+65%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+70%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+75%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+80%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+85%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+90%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+95%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_plus_am"></span>
+                        <label class="percent_text_plus" >+100%</label>
+                    </div>
+                </div>
+            
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-5%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-10%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-15%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-20%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-25%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-30%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-35%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-40%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-45%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-50%</label>
+                    </div>
+                </div>
+                <div class="block-container">
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-55%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-60%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-65%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-70%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-75%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-80%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-85%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-90%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-95%</label>
+                    </div>
+                    <div class="output-field">
+                        <span class="percent_minus_am"></span>
+                        <label class="percent_text_minus" >-100%</label>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "name": "electron-quick-start-master",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electronmon .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "release-installer",
+      "app": ""
+    }
+  },
+  "nsis": {
+    "allowElevation": true,
+    "perMachine": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": false,
+    "runAfterFinish": true,
+    "deleteAppDataOnUninstall": true,
+    "allowToChangeInstallationDirectory": true,
+    "oneClick": false,
+    "preMachine": true
+  },
+  "publish": [
+    {
+      "provider": "generic",
+      "url": ""
+    }
+  ],
+  "repository": "",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Sul Jedgaff",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.1.0",
+    "electron-builder": "^21.0.0"
+  },
+  "dependencies": {
+    "electronmon": "^2.0.2"
+  }
+}
