@@ -140,12 +140,12 @@ input:hover {
     font-size: 14px;
 }
 .percent_text_plus {
-    color: rgb(2, 238, 2);
-    font-size: 14px;
+    color: rgba(2, 238, 2, 0.801);
+    font-size: 12px;
 }
 .percent_text_minus {
     color: rgb(255, 137, 137);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .stock-wrapper {
